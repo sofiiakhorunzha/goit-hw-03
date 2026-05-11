@@ -22,7 +22,23 @@ sans-serif; */
 
 ul {
     list-style: none;
-    margin: 0;}
+    margin-block: 0;
+    padding-left: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+img {
+    display: block;
+}
 
 a {
   text-decoration: none;
@@ -45,16 +61,49 @@ body {
     background: #fff;
 }
 
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    max-width: 1158px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 /* #region header */
-.page-header { background-color: #fff; 
+.page-header.container{
+    background-color: #fff;
+    display: flex;
+    gap: 332px;
+    justify-content: space-between;
+    height: 72px;
+    align-items: center;
 }
 
 .navigation-header {
     background: var(--white);
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
 }
 
 .nav-list-header {
     background: var(--white);
+    display: flex;
+    column-gap: 40px;
 }
 
 .logo {
@@ -65,7 +114,10 @@ body {
         letter-spacing: 0.03em;
         text-transform: uppercase;
     color: #4d5ae5;
+    display: flex;
+    align-items: center;
 }
+
 .logo:hover,
 .logo:focus {color: #404bbf;}
 
@@ -88,7 +140,10 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #2e2f42;}
+    color: #2e2f42;
+    display: block;
+    padding: 20px 0;
+}
 
 .studio-nav-link:hover,
 .studio-nav-link:focus {color: #404bbf;}
@@ -105,7 +160,9 @@ body {
 .nav-link:focus
 {color: #4d5ae5;}
 
-.contacts { font-style: normal;}
+.contacts { 
+    font-style: normal;
+}
 
 .email {color: #434455;}
 .email:hover,
@@ -118,6 +175,8 @@ font-family: var(--font-family);
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--slate);
+    display: flex;
+    gap: 40px;
 }
 
 /* #endregion header */
@@ -148,6 +207,11 @@ font-family: var(--font-family);
 }
 .order-button:hover, 
 .order-button:focus {background: #404bbf}
+
+.hero-list {
+    display: flex;
+    gap: 24px;
+}
 
 .hero-title {font-family: var(--font-family);
     text-transform: capitalize;
