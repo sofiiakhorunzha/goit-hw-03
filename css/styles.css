@@ -84,26 +84,28 @@ body {
 }
 
 /* #region header */
-.page-header.container{
+.page-header {
     background-color: #fff;
+    padding: 24px 0;
+}
+
+.header-container {
     display: flex;
-    gap: 332px;
-    justify-content: space-between;
-    height: 72px;
     align-items: center;
 }
 
 .navigation-header {
     background: var(--white);
     display: flex;
-    flex-grow: 1;
-    justify-content: space-between;
+    align-items: center;
 }
 
 .nav-list-header {
     background: var(--white);
     display: flex;
-    column-gap: 40px;
+    align-items: center;
+    gap: 40px;
+    padding-right: 332px;
 }
 
 .logo {
@@ -114,8 +116,7 @@ body {
         letter-spacing: 0.03em;
         text-transform: uppercase;
     color: #4d5ae5;
-    display: flex;
-    align-items: center;
+    margin-right: 76px;
 }
 
 .logo:hover,
@@ -136,13 +137,13 @@ body {
 .navigation-header:hover,
 .navigation-header:focus {color: #404bbf;}
 
+
+
 .studio-nav-link {font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    display: block;
-    padding: 20px 0;
 }
 
 .studio-nav-link:hover,
@@ -176,7 +177,9 @@ font-family: var(--font-family);
     letter-spacing: 0.02em;
     color: var(--slate);
     display: flex;
+    align-items: center;
     gap: 40px;
+    margin-left: auto;
 }
 
 /* #endregion header */
@@ -184,33 +187,54 @@ font-family: var(--font-family);
 /* #region hero */
 
 .main-section {background: var(--navy-blue);
+    height: 600px;
 }
-
-.main-title {font-family: var(--font-family);
-    font-weight: 700;
-    font-size: 56px;
-    line-height: 1.07;
-    letter-spacing: 0.02em;
-    text-align: center;
-    color: var(--white);
-
+.main-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.main-title {
+    font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 1.07;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: var(--white);
+        max-width: 496px;
+        margin: 0 auto;
+        padding-top: 188px;
+        margin-bottom: 48px;
 }
 
 .order-button {
     background: var(--iris);
-font-family: var(--font-family);
+    font-family: var(--font-family);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: var(--white);
+    border-radius: 4px;
+    width: 169px;
+    height: 56px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    
 }
+
+
 .order-button:hover, 
 .order-button:focus {background: #404bbf}
+
+.hero {
+    height: 344px;
+}
 
 .hero-list {
     display: flex;
     gap: 24px;
+    padding: 120px 0;
 }
 
 .hero-title {font-family: var(--font-family);
@@ -219,8 +243,8 @@ font-family: var(--font-family);
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
-    text-align: center;
     color: var(--navy-blue);
+    margin-bottom: 8px;
 }
 
 
@@ -246,8 +270,14 @@ font-family: var(--font-family);
 
 /* #region team */
 
-.team {background: var(--cloud);
+.team {
+    background: #F4F4FD
 }
+
+.team-container {
+    height: 732px;
+}
+
 .team-title {font-family: var(--font-family);
     text-transform: capitalize;
     font-weight: 700;
@@ -255,15 +285,28 @@ font-family: var(--font-family);
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-align: center;
-
     color: var(--navy-blue);
+    padding-top: 120px;
+    padding-bottom: 72px;
 }
+
 .team-list {
     background: var(--white);
+    display: flex;
+    text-align: center;
+    gap: 24px;
+    width: 264px;
+    height: 380px;
 }
 
 .team-member {
     background: var(--white);
+    border-radius: 0 0 4px 4px;
+        padding: 0px 0px 32px;
+        width: 264px;
+        height: 380px;
+        box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+        background: var(--white);
 }
 
 .team-name {font-family: var(--font-family);
@@ -273,7 +316,8 @@ font-family: var(--font-family);
     letter-spacing: 0.02em;
     text-align: center;
     color: var(--navy-blue);
-
+    padding-top: 32px;
+    padding-bottom: 8px;
 }
 
 .team-role {font-family: var(--font-family);
@@ -283,12 +327,16 @@ font-family: var(--font-family);
     letter-spacing: 0.02em;
     text-align: center;
     color: var(--slate);
-
 }
 
 /* #endregion team */
 
 /* #region portfolio */
+
+.portfolio-container {
+    height: 1240px;
+}
+
 .portfolio {
         font-size: 36px;
         line-height: 1.11;
@@ -296,15 +344,38 @@ font-family: var(--font-family);
         letter-spacing: 0.02em;
         color: var(--navy-blue);
         text-transform: capitalize;
+        padding-top: 120px;
+        padding-bottom: 72px;
     }
+
+.portfolio-item {
+    height: 420px;
+    width: 360px;
+}
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    row-gap: 48px;
+}
+
+.portfolio-item-info {
+    border-bottom: 1px solid var(--cornflower);
+        border-left: 1px solid var(--cornflower);
+        border-right: 1px solid var(--cornflower);
+        padding: 32px 16px;
+        width: 360px;
+        height: 120px;
+}
 
 .portfolio-title {font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
-    text-align: center;
     letter-spacing: 0.02em;
     color: var(--navy-blue);
     text-transform: capitalize;
+    margin-bottom: 8px;
 }
 
 .portfolio-sub {font-family: var(--font-family);
@@ -313,15 +384,19 @@ font-family: var(--font-family);
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--slate);
-
 }
+
 
 /* #endregion portfoli */
 
 /* #region footer */
 
 .footer {background: var(--navy-blue);
+    height: 312px;
+}
 
+.footer-container {
+    padding-top: 100px;
 }
 
 .part-footer-logo{font-family: var(--second-family);
@@ -330,7 +405,8 @@ font-family: var(--font-family);
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--cloud);}
+    color: var(--cloud);
+}
 
 .footer-text {
 font-family: var(--font-family);
@@ -339,6 +415,8 @@ font-family: var(--font-family);
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--cloud);
+    width: 264px;
+    padding-top: 16px;
 }
 
 /* #endregion footer */
