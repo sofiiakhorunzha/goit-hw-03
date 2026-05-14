@@ -1,10 +1,9 @@
 .footer {
     background: var(--navy-blue);
-    height: 312px;
 }
 
 .footer-container {
-    padding-top: 100px;
+    padding: 100px 0;
 }
 
 .part-footer-logo {

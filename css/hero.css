@@ -1,6 +1,6 @@
 .main-section {
     background: var(--navy-blue);
-    height: 600px;
+    padding: 188px 0;
 }
 
 .main-container {
@@ -19,7 +19,6 @@
     color: var(--white);
     max-width: 496px;
     margin: 0 auto;
-    padding-top: 188px;
     margin-bottom: 48px;
 }
 
@@ -32,8 +31,7 @@
     letter-spacing: 0.04em;
     color: var(--white);
     border-radius: 4px;
-    width: 169px;
-    height: 56px;
+    padding: 16px 32px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 
 }

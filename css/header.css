@@ -1,6 +1,6 @@
 .page-header {
     background-color: #fff;
-    padding: 24px 0;
+    border-bottom: 1px solid #e7e9fc;
 }
 
 .header-container {
@@ -19,7 +19,6 @@
     display: flex;
     align-items: center;
     gap: 40px;
-    padding-right: 332px;
 }
 
 .logo {
@@ -66,6 +65,8 @@
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    display: block;
+    padding: 24px 0;
 }
 
 .studio-nav-link:hover,
@@ -87,11 +88,17 @@
 }
 
 .contacts {
+    margin-left: auto;
     font-style: normal;
 }
 
 .email {
-    color: #434455;
+    font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        letter-spacing: 0.02em;
+        color: var(--slate);
 }
 
 .email:hover,
@@ -109,5 +116,5 @@
     display: flex;
     align-items: center;
     gap: 40px;
-    margin-left: auto;
 }
+

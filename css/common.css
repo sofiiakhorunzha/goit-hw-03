@@ -70,7 +70,7 @@ body {
     margin-right: auto;
 }
 
-.sr-only {
+.visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;

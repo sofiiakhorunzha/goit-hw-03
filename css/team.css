@@ -3,7 +3,7 @@
 }
 
 .team-container {
-    height: 732px;
+    padding: 120px 0;
 }
 
 .team-title {
@@ -15,25 +15,18 @@
     letter-spacing: 0.02em;
     text-align: center;
     color: var(--navy-blue);
-    padding-top: 120px;
     padding-bottom: 72px;
 }
 
 .team-list {
-    background: var(--white);
     display: flex;
     text-align: center;
     gap: 24px;
-    width: 264px;
-    height: 380px;
 }
 
 .team-member {
     background: var(--white);
     border-radius: 0 0 4px 4px;
-    padding: 0px 0px 32px;
-    width: 264px;
-    height: 380px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     background: var(--white);
 }
@@ -46,7 +39,6 @@
     letter-spacing: 0.02em;
     text-align: center;
     color: var(--navy-blue);
-    padding-top: 32px;
     padding-bottom: 8px;
 }
 
@@ -58,4 +50,8 @@
     letter-spacing: 0.02em;
     text-align: center;
     color: var(--slate);
+}
+
+.team-info {
+    padding: 32px 16px;
 }
