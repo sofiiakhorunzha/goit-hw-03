@@ -1,9 +1,9 @@
-.portfolio-container {
+.portfolio {
     padding-top: 120px;
-    padding-bottom: 72px;
+    padding-bottom: 120px;
 }
 
-.portfolio {
+.portfolio-main-title{
     font-size: 36px;
     line-height: 1.11;
     text-align: center;

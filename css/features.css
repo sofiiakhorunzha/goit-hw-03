@@ -1,4 +1,4 @@
-.hero-container {
+.hero {
     padding: 120px 0;
 }
 
@@ -24,6 +24,4 @@
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--slate);
-    height: 104px;
-    width: 264px;
 }
